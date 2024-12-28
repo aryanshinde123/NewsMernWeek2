@@ -1,17 +1,68 @@
-News Platform
-This project is a News Platform built with React. It allows users to browse news articles, view full descriptions, and read more about them. Users can also log in to view detailed articles, and the platform features an intuitive user interface and modern design.
+# The Bharat Bulletin
+The Bharat Bulletin is a modern news search application that allows users to browse and search for news articles. It is built using Vite React, styled with Tailwind CSS, and integrates MongoDB for storing user data. Live news articles are fetched directly using the NewsAPI.
 
-Features
-Browse Articles: View a list of news articles with titles, descriptions, and images.
-Login to Read More: Users can log in to read the full content of the articles.
-Article Details: Click on any article to view its full details on a separate page.
-Responsive Design: The platform is fully responsive, working on both desktop and mobile devices.
-Truncated Descriptions: Descriptions of articles are truncated in the main view to save space and provide a quick overview.
+# Features
+Stylish and responsive design with Tailwind CSS.
+Dynamic news search functionality by keywords or predefined categories like India, World, and Business.
+Backend powered by Node.js and Express.js for managing API requests and user data.
+MongoDB database for user data storage.
+
+# Technologies Used
+Frontend: Vite, React, Tailwind CSS.
+Backend: Node.js, Express.js.
+Database: MongoDB.
+API: NewsAPI for fetching live news.
+
+# Getting Started
+Follow these steps to run the project locally.
+
+# Prerequisites
+Install Node.js and npm.
+Set up a MongoDB instance (local or cloud).
+Obtain an API key from NewsAPI.
+Steps to Run
+Clone the Repository
 
 
-Technologies Used
-React: Frontend framework for building the user interface.
-React Router: For handling routing between pages.
-Context API: For managing user authentication state across the application.
-Tailwind CSS: For styling and ensuring responsive design.
-News API: Fetches news data to display the latest articles.
+git clone <repository_url>  
+cd <repository_directory>  
+Install Dependencies
+Navigate to the frontend and backend folders and install dependencies:
+
+
+# Frontend  
+cd frontend  
+npm install  
+
+# Backend  
+cd ../backend  
+npm install  
+Update Backend API Key
+Open the backend code and directly replace the placeholder <your_newsapi_key> with your actual NewsAPI key wherever it is used.
+
+Start the Servers
+Open two terminals:
+
+Start the frontend server:
+
+
+cd frontend  
+npm run dev  
+Start the backend server:
+
+
+cd backend  
+npm start  
+Access the Application
+Open your browser and navigate to:
+
+
+http://localhost:5173  
+ 
+ # Notes
+News articles may not load if the daily API request limit for NewsAPI is exceeded. Consider upgrading your API plan if required.
+Ensure MongoDB is running and accessible for proper functionality.
+# Future Enhancements
+Add user profiles and options for saving favorite articles.
+Introduce additional filtering and sorting mechanisms for better user experience.
+Optimize API requests to reduce dependency on external API limits.
